@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="referrer" content="no-referrer">
 <title>Verifying...</title>
-<!-- roblox won't accept workers.dev as an OAuth redirect, so it lands here and gets passed straight on to the bot -->
+<!-- for whatever reason workers.dev is blacklisted? https://devforum.roblox.com/t/one-or-more-redirect-uris-are-invalid-creating-oauth-20-app/4015660 so we gonna do it the dirty way -->
 <script>location.replace("https://report-bot.reportmodel.workers.dev/oauth" + location.search);</script>
 <p>Verifying... if nothing happens, <a id="go" href="https://report-bot.reportmodel.workers.dev/oauth">click here</a>.</p>
 <script>document.getElementById("go").href += location.search;</script>
